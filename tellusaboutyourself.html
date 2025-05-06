@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ShareIT</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+        background-color: #e0e0e0;
+        padding: 20px;
+        text-align: center;
+    }
+
+.container {
+    background-color: #4a4a4a;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.option {
+    background-color: #FFC107;
+    border: none;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0c040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo"> 🏠 ShareIT </h1>
+        <h1>"Welcome to ShareIT, <span id="firstName">[First Name]</span>! Let’s help you find your ideal roommate."</h1>
+    </header>
+    <br><br>
+    <div class="container">
+        <h1>Now Tell Us About Yourself</h1>
+        
+        <div class="section">
+            <h2>I am a</h2>
+            <label class="option">
+                <input type="radio" name="role" value="Student">
+                <span>Student</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="role" value="University Staff">
+                <span>University Staff</span>
+            </label>
+        </div>
+        
+        <div class="section">
+            <h2>If student, please select your academic level</h2>
+            <label class="option">
+                <input type="radio" name="academic_level" value="Undergraduate">
+                <span>Undergraduate</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="academic_level" value="Graduate">
+                <span>Graduate</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="academic_level" value="PhD">
+                <span>PhD</span>
+            </label>
+        </div>
+
+        <div class="section">
+            <h2>Gender</h2>
+            <label class="option">
+                <input type="radio" name="gender" value="Female">
+                <span>Female</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="gender" value="Male">
+                <span>Male</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="gender" value="Non-Binary">
+                <span>Non-Binary</span>
+            </label>
+        </div>
+
+        <div class="section">
+            <h2>Age Group</h2>
+            <label class="option">
+                <input type="radio" name="age_group" value="18-21">
+                <span>18-21</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="age_group" value="22-25">
+                <span>22-25</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="age_group" value="25+">
+                <span>25+</span>
+            </label>
+        </div><br>
+        <button type="Next" onclick="Next()">Next</button>
+    </div>
+    <script>
+        function Next() {
+            window.location.href = "interestsandlifestyles.html"
+        }
+    </script>
+</body>
+</html>

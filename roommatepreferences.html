@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+        background-color: #e0e0e0;
+        padding: 20px;
+        text-align: center;
+        }
+        .container {
+            background-color: #4a4a4a;
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .preference {
+            background-color: #f6a318;
+            padding: 10px;
+            margin: 5px 5px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .option {
+            background-color: #f6a318;
+            padding: 10px;
+            margin: 5px 5px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .option:hover {
+            background-color: #ffcc00;
+        }
+        button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #f0c040;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo"> 🏠 ShareIT </h1>
+        <h1>"Welcome to ShareIT, <span id="firstName">[First Name]</span>! Let’s help you find your ideal roommate."</h1>
+    </header>
+    <br><br>
+<div class="container">
+    <h1>Roommate Preference</h1>
+<p>Select all that apply:</p>
+    <label class="preference">
+        <input type="checkbox" name="preferences" value="is a student"> is a student
+    </label><br><br>
+    <label class="preference">
+        <input type="checkbox" name="preferences" value="is from the same academic level"> is from the same academic level
+    </label><br><br>
+    <label class="preference">
+        <input type="checkbox" name="preferences" value="has the same gender"> has the same gender
+    </label><br><br>
+    <label class="preference">
+        <input type="checkbox" name="preferences" value="has the same preferred study schedule"> has the same preferred study schedule
+    </label><br><br>
+    <label class="preference">
+        <input type="checkbox" name="preferences" value="has the same cleanliness preference"> has the same cleanliness preference
+    </label><br><br>
+    <label class="preference">
+        <input type="checkbox" name="preferences" value="doesn't have pets"> doesn't have pets
+    </label><br><br>
+    <label class="preference">
+        <input type="checkbox" name="preferences" value="is in the same age group"> is in the same age group
+    </label>
+
+    <h3>Are you okay with guests often?</h3>
+    <div class="rating">
+        <label class="option">
+            <input type="radio" name="rating" value="1">
+            <span>1</span>
+        </label>
+        <label class="option">
+            <input type="radio" name="rating" value="2">
+            <span>2</span>
+        </label>
+        <label class="option">
+            <input type="radio" name="rating" value="3">
+            <span>3</span>
+        </label>
+        <label class="option">
+            <input type="radio" name="rating" value="4">
+            <span>4</span>
+        </label>
+        <label class="option">
+            <input type="radio" name="rating" value="5">
+            <span>5</span>
+        </label>
+        <p>No<span style="float: right;">Yes</span></p>
+        <h2>Additional Preference</h2>
+        <textarea placeholder="Type here"></textarea><br><br>
+        <button type="Next" onclick="Next()">Next</button>
+    </div>
+    <script>
+        function Next() {
+            window.location.href = "addpictures.html"
+        }
+    </script>
+</div>
+</body>
+</html>

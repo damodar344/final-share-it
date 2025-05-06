@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #FFFFFF;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    header {
+        background-color: #e0e0e0;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .form-container {
+        background-color: #4A4A4A;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        margin-top: 10px;
+    }
+    
+    .option {
+        background-color: #FFC107;
+        border: none;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .option:hover {
+        background-color: #FFB300;
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        width: calc(100% - 22px);
+        margin-top: 10px;
+    }
+    
+    button {
+        background-color: #FFC107;
+        border: none;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    button:hover {
+        background-color: #FFB300;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo"> 🏠 ShareIT </h1>
+        <h1>"Welcome to ShareIT, <span id="firstName">[First Name]</span>! Let’s help you find your ideal roommate."</h1>
+    </header>
+    <br><br>
+    <main>
+        <div class="form-container">
+            <h2>Tell us about the space you’re listing</h2>
+<br>
+            <div class="section">
+                <h2>Accommodation Type</h2>
+                <label class="option">
+                    <input type="radio" name="type" value="Single Room">
+                    <span>Single Room</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="type" value="Entire Unit">
+                    <span>Entire Unit</span>
+                </label>
+            </div>
+<br><br>
+            <div class="section">
+                <h2>Private Bathroom</h2>
+                <label class="option">
+                    <input type="radio" name="bathtype" value="Yes">
+                    <span>Yes</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="bathtype" value="No, Shared">
+                    <span>No, Shared</span>
+                </label>
+            </div>
+<br><br>
+            <label for="rent">Rent</label>
+            <input type="text" id="rent" placeholder="per month">
+<br><br>
+            <label>
+                <input type="checkbox"> Utility Included
+            </label>
+            <h2>Amenities Included</h2>
+<p>Select all that apply:</p>
+
+<div class="amenities-container">
+    <label class="amenity"><input type="checkbox" name="amenities" value="Parking Space"> Parking Space</label><br>
+    <label class="amenity"><input type="checkbox" name="amenities" value="Wi-Fi"> Wi-Fi</label><br>
+    <label class="amenity"><input type="checkbox" name="amenities" value="Dishwasher"> Dishwasher</label><br>
+    <label class="amenity"><input type="checkbox" name="amenities" value="In-Unit Laundry"> In-Unit Laundry</label><br>
+    <label class="amenity"><input type="checkbox" name="amenities" value="Furnished"> Furnished</label><br>
+    <label class="amenity"><input type="checkbox" name="amenities" value="Public Transportation access to campus"> Public Transportation access to campus</label>
+</div>
+
+<h3>Distance from Campus</h3>
+<input type="text" placeholder="in miles" name="distance" />
+            <button id="Next" onclick="Next()">Next</button>
+        </div>
+        <script>
+            function Next() {
+                window.location.href = "tellusaboutyourself.html"
+            }
+        </script>
+    </main>
+    <script src="listaplace.js"></script>
+</body>
+</html>

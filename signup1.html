@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFD700;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+        }
+        .btn {
+            background-color: #FFD700;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Create a new account</h2>
+    <input type="text" placeholder="First Name" id="First Name" required><br><br>
+    <input type="text" placeholder="Last Name" id="Last Name" required><br><br>
+    <button class="btn" onclick="next()">Next</button><br>
+    <a href="/ShareIT/login.html" onclick="showLogin()"><br>I already have an account (Login)</a>
+</div>
+
+<script>
+    function next() {
+        window.location.href = "signup2.html"
+    }
+
+    function showLogin() {}
+</script>
+
+</body>
+</html>

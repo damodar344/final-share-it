@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFD700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .modal {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+        }
+        .modal h2 {
+            margin-bottom: 15px;
+        }
+        .modal p {
+            margin-bottom: 20px;
+        }
+        .login-button {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="modal">
+        <h2>Let's check your student status first!</h2>
+        <p>We sent a verification link to your student email. Please click the link to continue!</p>
+        <button class="login-button" onclick="Login()">Login</button>
+        <div class="footer">
+            <p>Why is this necessary?</p>
+            <p>At ShareIT, your safety comes first. That’s why we verify every student’s status—ensuring you’re only matched with current Towson University students for a secure and trusted roommate search.</p>
+        </div>
+    </div>
+
+    <script>
+        function Login() {
+            window.location.href = "login.html"
+        }
+    </script>
+</body>
+</html>

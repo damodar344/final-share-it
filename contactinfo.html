@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT</title>
+    <style>
+        body {
+            background-color: #fefefe;
+            font-family: Arial, sans-serif;
+        }
+        
+        .form-container {
+            background-color: #333;
+            color: white;
+            width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: auto;
+            margin-top: 100px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-methods {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contact-button {
+            background-color: #FFA500;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            color: black;
+        }
+        
+        .contact-button:hover {
+            background-color: #FFD700;
+        }
+        
+        .submit-button {
+            background-color: #FFA500;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .submit-button:hover {
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Please enter contact Information</h1>
+        <form>
+            <label for="cellphone">Cellphone No.</label>
+            <input type="text" id="cellphone" name="cellphone" required>
+            
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <h3>Preferred way of being contacted</h3>
+            <div class="contact-methods">
+                    <label class="contact-button">
+                        <input type="radio" name="contacttype" value="Email">
+                        <span>Email</span>
+                    </label>
+                    <label class="contact-button">
+                        <input type="radio" name="contacttype" value="Phone No.">
+                        <span>Phone No.</span>
+                    </label>
+            </div>
+            <br>
+            <button type="submit" class="submit-button" onclick="Next()">Next</button>
+        </form>
+    </div>
+    <script>
+        function Next()
+        {
+        window.location.href = "successpage.html"
+        }
+    </script>
+</body>
+</html>

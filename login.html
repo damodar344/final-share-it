@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFD700;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+        }
+        .btn {
+            background-color: #FFD700;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Login into your Account</h2>
+    <input type="text" placeholder="Student Mail ID" id="Student Mail ID" required><br><br>
+    <input type="password" placeholder="Password" id="Password" required><br><br>
+    <button class="btn" onclick="Next()">Next</button><br><br>
+    <a href="/ShareIT/signup1.html" onclick="showsignup()">I don't have an account (Signup)</a>
+</div>
+
+<script>
+    function Next() {
+        window.location.href = "rentorlist.html"
+    }
+
+    function showsignup() {}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        header {
+        background-color: #e0e0e0;
+        padding: 20px;
+        text-align: center;
+        }
+        .container {
+            background-color: #4a4a4a;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .group {
+            margin: 20px 0;
+        }
+        .option {
+            background-color: #f6a318;
+            padding: 10px;
+            margin: 5px 5px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .option:hover {
+            background-color: #ffcc00;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+        }
+        .rating div {
+            background-color: #f6a318;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .rating div:hover {
+            background-color: #ffcc00;
+        }
+        button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #f0c040;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo"> 🏠 ShareIT </h1>
+        <h1>"Welcome to ShareIT, <span id="firstName">[First Name]</span>! Let’s help you find your ideal roommate."</h1>
+    </header>
+    <br><br>
+    <div class="container">
+        <h1>Interests & Lifestyle</h1>
+            <h3>What’s your study schedule like?</h3>
+            <div class="group">
+                <h2>What’s your study schedule like?</h2>
+                <label class="option">
+                    <input type="radio" name="studytype" value="Morning Person">
+                    <span>Morning Person</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="studytype" value="Night Owl">
+                    <span>Night Owl</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="studytype" value="Flexible">
+                    <span>Flexible</span>
+                </label>
+        </div>
+
+        <div class="group">
+            <h2>Socializing Preference</h2>
+                <label class="option">
+                    <input type="radio" name="Socializing" value="Enjoys hanging out">
+                    <span>Enjoys hanging out</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="Socializing" value="I prefer my privacy">
+                    <span>I prefer my privacy</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="Socializing" value="Both">
+                    <span>Both</span>
+                </label>
+        </div>
+
+        <div class="group">
+            <h3>How tidy do you keep your space?</h3>
+            <div class="rating">
+                <label class="option">
+                    <input type="radio" name="rating" value="1">
+                    <span>1</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="rating" value="2">
+                    <span>2</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="rating" value="3">
+                    <span>3</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="rating" value="4">
+                    <span>4</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="rating" value="5">
+                    <span>5</span>
+                </label>
+            </div>
+            <p>Not tidy at all <span style="float: right;">Very tidy</span></p>
+        </div>
+
+        <div class="group">
+            <h3>Drinking Preferences</h3>
+            <label class="option">
+                <input type="radio" name="Drinking" value="Yes">
+                <span>Yes</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="Drinking" value="No">
+                <span>No</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="Drinking" value="Occasionally">
+                <span>Occasionally</span>
+            </label>
+        </div>
+
+        <div class="group">
+            <h3>Smoking Preferences</h3>
+            <label class="option">
+                <input type="radio" name="Smoking" value="Yes">
+                <span>Yes</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="Smoking" value="No">
+                <span>No</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="Smoking" value="Occasionally">
+                <span>Occasionally</span>
+            </label>
+        </div><br>
+        <div class="group">
+        </div><h1>Hobbies</h1>
+        <p>Select all that apply:</p>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Gaming"> Gaming
+            </label><br>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Art"> Art
+            </label><br>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Meditation"> Meditation
+            </label><br>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Gym"> Gym
+            </label><br>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Cooking"> Cooking
+            </label><br>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Music"> Music
+            </label><br>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Movies"> Movies
+            </label><br>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Reading"> Reading
+            </label><br>
+            <label class="hobby">
+                <input type="checkbox" name="hobbies" value="Other"> Other
+            </label><br><br>
+            <button type="Next" onclick="Next()">Next</button>
+        </div>
+    </div>
+    <script>
+        function Next() {
+            window.location.href = "roommatepreferences.html"
+        }
+    </script>
+</body>
+</html>
