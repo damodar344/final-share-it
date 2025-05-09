@@ -40,6 +40,12 @@ export const authOptions = {
             throw new Error("Invalid password");
           }
 
+          
+              // Check if email is verified
+              if (!user.emailVerified) {
+                throw new Error("Please verify your email first and try again.");
+              }
+
           return {
             id: user._id.toString(),
             email: user.email,
