@@ -460,6 +460,10 @@ export async function finalizeListing() {
 
 export async function getAvailableListings() {
   try {
+    const session = await getSession();
+    if (!session) {
+      throw new Error("Not authenticated");
+    }
     await connectToDatabase();
 
     const listings = await Listing.find({ status: "active" }).lean();
@@ -514,6 +518,10 @@ export async function getAvailableListings() {
 
 export async function getListing(id: string) {
   try {
+    const session = await getSession();
+    if (!session) {
+      throw new Error("Not authenticated");
+    }
     await connectToDatabase();
 
     const listing = await Listing.findById(id).lean();
